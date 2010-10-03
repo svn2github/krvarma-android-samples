@@ -3,7 +3,7 @@
     
     <string name="app_name">gesture sample</string>
 
-<string name="app_info">This is a sample application to demonstrate the use of Android Gestures. When a gesture is drawn, the recognized gesture(s) are displayed below. To get gestures availabe click the button \'Available Gestures\'</string>
-<string name="button_gestures_label">Available Gestures</string>
+<string name="app_info">This is a sample application to demonstrate the use of Android Gestures. When a gesture is drawn, the recognized gesture(s) are displayed below. To get gestures availabe click the button \'Gesture List\'</string>
+<string name="button_gestures_label">Gesture List</string>
 <string name="gesture_list">gesture list</string>
 </resources>
