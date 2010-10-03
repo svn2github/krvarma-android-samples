@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">gesture sample</string>
+
+<string name="app_info">This is a sample application to demostrate the use of Android Gestures. When a gesture is drawn, the recognized gesture(s) are displayed below. To get gestures availabe click the button \'Available Gestures\'</string>
+<string name="button_gestures_label">Available Gestures</string>
+<string name="gesture_list">gesture list</string>
+</resources>
