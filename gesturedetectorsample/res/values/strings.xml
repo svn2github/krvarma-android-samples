@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_info_drag">GestureDetector sample.\n\nCurrent Mode: SCROLL\n\nDrag the view using finger.\nLong press to change the mode to SWIPE.\nDouble tap to reposition the view to normal.</string>
+    <string name="app_name">Gesture Detector Sample</string>
+<string name="app_info_flip">GestureDetector sample.\n\nCurrent Mode: FLIP\n\nSwipe left, right, up, down to change the views\nLong press to change to mode to SCROLL</string>
+</resources>
