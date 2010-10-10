@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">sensor sample</string>
+<string name="app_info">Sample application to show the use of hardware sensors. Select a sensor from the list below to start.</string>
+<string name="sensortest_name">sensor test</string>
+<string name="waiting_for_accuracy">Waiting for sensor accuracy...</string>
+<string name="waiting_for_values">Waiting for sensor values...</string>
+</resources>
