@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="textcolor_normal">#FFFFFFFF</color>
+	<color name="backcolor_normal">#FF000000</color>
+	
+	<color name="textcolor_overspeed">#FF000000</color>
+	<color name="backcolor_overspeed">#FFFF0000</color>
+</resources>

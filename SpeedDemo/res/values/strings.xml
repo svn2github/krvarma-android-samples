@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="info">Waiting for GPS...</string>
+    <string name="app_name">Speed Warning</string>
+    
+    <string name="about_menu_name">About</string>
+    
+    
+    <string name="about_message">Sample application to demostrate GPS in Android.\n\nVisit http://www.krvarma.com for more info.</string>
+<string name="unit_km">Kilometer</string>
+<string name="unit_miles">Miles</string>
+<string name="setting_unit">Measurement Unit</string>
+</resources>
