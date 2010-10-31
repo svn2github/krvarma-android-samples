@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Application Launcher</string>
+<string name="app_desc">Example application to show how to enumerate and launch external application</string>
+<string name="menu_about">About</string>
+<string name="menu_about_desc">About App Launcher</string>
+</resources>
