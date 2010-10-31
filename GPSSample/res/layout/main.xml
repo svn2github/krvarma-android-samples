@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="0.9">
+    	
+    	<LinearLayout
+			android:orientation="horizontal"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content">
+    		
+    		<TextView
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:gravity="center_vertical|left"
+        		android:text="Measurement unit"/>
+        	
+        	<Spinner 
+        		android:id="@+id/unitspinner"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:drawSelectorOnTop="true"
+        		android:prompt="@string/unit_prompt"/>
+        </LinearLayout>
+    	<LinearLayout
+			android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginTop="10dip"
+    		android:layout_marginBottom="10dip">
+    		
+    		<TextView
+    			android:id="@+id/info"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center"
+    			android:text="@string/start_measuring_info">
+    		</TextView>
+    		<View android:id="@+id/divider"
+    			android:background="@drawable/divider"
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dp"
+    			android:layout_marginTop="10dip"/>
+    			
+    		<TextView
+    			android:id="@+id/distance"
+    			android:layout_width="fill_parent"
+    			android:layout_height="fill_parent"
+    			android:gravity="center_vertical|center_horizontal"
+    			android:layout_marginTop="20dip"
+    			android:textSize="40dip">
+    		</TextView>
+    		
+    	</LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+		android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="0.1"
+    	android:gravity="bottom">
+    	
+    	<Button
+    		android:id="@+id/startmeasuring"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="Start Measuring"
+    		android:layout_weight="0.5">
+    	</Button>
+    	
+    	<Button
+    		android:id="@+id/stopmeasuring"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="Stop Measuring"
+    		android:layout_weight="0.5">
+    	</Button>
+    </LinearLayout>
+
+</LinearLayout>

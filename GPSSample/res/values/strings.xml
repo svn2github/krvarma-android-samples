@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GPSSample</string>
+    <string name="unit_prompt">Measurement Unit</string>
+    <string name="start_measuring_info">Press \"Start Measuring\" button to start measuring the distance from here.</string>
+    <string name="measuring_info">Distance from starting point is</string>
+    
+    <string-array name="units">
+        <item>Meters</item>
+        <item>Yards</item>
+        <item>Kilo Meters</item>
+        <item>Miles</item>
+    </string-array>
+</resources>
