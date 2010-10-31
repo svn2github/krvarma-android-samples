@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="info">Notification sample, press the button Notification to add a notification.</string>
+    <string name="app_name">NotificationSample</string>
+<string name="btn_default_notification_text">Add Default</string>
+<string name="notification_string">This is the activity started when you press the notification.</string>
+<string name="btn_custom_notification_text">Add Custom</string>
+
+</resources>
