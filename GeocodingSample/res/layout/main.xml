@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:padding="10dip">
+	    
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/location_name"
+			android:hint="@string/location_name_hint"
+			android:imeOptions="actionSearch"
+			android:imeActionLabel="Find">
+		</EditText>
+		
+		<CheckBox
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/use_current_location"
+			android:text="@string/use_current_location">
+		</CheckBox>
+		
+		<Button
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/find_location"
+			android:text="@string/find_place"
+			android:padding="10dip">
+		</Button>
+		
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/location_info">
+		</TextView>
+		
+	</LinearLayout>
+</ScrollView>

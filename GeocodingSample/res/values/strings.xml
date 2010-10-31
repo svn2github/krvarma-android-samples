@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_info">Hello World, GeocoderSample!</string>
+    <string name="app_name">GeocoderSample</string>
+<string name="find_place">Find</string>
+<string name="use_current_location">Current Location</string>
+<string name="location_name_hint">Enter location name</string>
+<string name="progress_message">Finding location information...</string>
+<string name="error_no_info">Enter location name or check use current location check box.</string>
+<string name="error_gps_not_found">Current location not available.</string>
+<string name="error_geocoder">Cannot find the location information.</string>
+</resources>
