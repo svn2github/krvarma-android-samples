@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="phoneno_info">Phone Number</string>
+    <string name="app_name">SMS Demo</string>
+<string name="message_info">SMS Message</string>
+<string name="send_binarysms">Send binary sms (to port 8091)</string>
+
+</resources>
