@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_info">This is a sample car dock application. The purpose of this application is to show how to create a custom car dock application. This application does not do anything, press the back button to exit the application and the CAR DOCK mode.</string>
+    <string name="app_name">Sample Car Dock Application</string>
+</resources>
