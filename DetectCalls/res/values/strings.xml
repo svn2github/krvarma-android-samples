@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_info">This is a simple application to demonstrate how to detect incoming and outgoing calls.\n\nWhen an incoming and outgoing call is detected, this application just display a Toast.</string>
+    <string name="app_name">Detect Calls</string>
+</resources>
