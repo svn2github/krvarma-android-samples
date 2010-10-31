@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">TTSSample</string>
+<string name="language_text">Language</string>
+<string name="speed_text">Speed</string>
+<string name="select_language_text">Select Language</string>
+<string name="app_info">This application demonstrates the use of TTS Engine in Android. Type some text and press the \'Speak\' button the start. To change the language use the menu \'Language\' and to change the speech rate use the menu \'Speed\'.</string>
+</resources>
