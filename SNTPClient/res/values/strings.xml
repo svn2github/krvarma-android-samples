@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">SNTPClient</string>
+<string name="sntp_server_caption">SNTP Server:</string>
+<string name="retrieve_time">Retrieve Time</string>
+</resources>
