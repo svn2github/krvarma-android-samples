@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<ListView 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:id="@android:id/list"
+	    android:layout_weight="1.0"/>
+	
+	<LinearLayout
+		android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@android:drawable/screen_background_light"
+    	android:padding="10dip">
+    	
+    	<TextView
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/selectedfile"
+    		android:text="Not file selected"
+    		android:textColor="@android:color/black"
+    		android:gravity="center_horizontal"
+    		android:singleLine="true"
+    		android:ellipsize="middle"/>
+    	
+    	<SeekBar
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/seekbar"
+    		android:max="100"
+    		android:paddingBottom="10dip"/>
+    		
+    	<LinearLayout
+			android:orientation="horizontal"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="center"
+	    	android:background="@android:drawable/screen_background_light">
+	    	
+	    	<ImageButton
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:id="@+id/prev"
+	    		android:src="@android:drawable/ic_media_previous"/>
+	    		
+	    	<ImageButton
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:id="@+id/play"
+	    		android:src="@android:drawable/ic_media_play"/>
+	    		
+	    	<ImageButton
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:id="@+id/next"
+	    		android:src="@android:drawable/ic_media_next"/>
+	    	
+    	</LinearLayout>	
+   	</LinearLayout>
+	    
+</LinearLayout>
