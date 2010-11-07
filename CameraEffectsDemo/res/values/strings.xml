@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Camera Sample</string>
+<string name="color_effect">Color Effects</string>
+<string name="white_balance">White Balance</string>
+<string name="app_desc">Sample camera application from www.androiddevblog.net\nA sample camera applicaiton to demonstrate the use of camera effects.\n\nFor more infromation please visit:\nhttp://www.androiddevblog.net\n</string>
+<string name="start_application">Start camera, action, cut :)</string>
+</resources>
