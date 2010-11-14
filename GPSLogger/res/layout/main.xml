@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip">
+    
+    <ImageView
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:src="@drawable/logo"
+    	android:paddingBottom="10dip"/>
+	
+	<TextView  
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="@string/app_info"
+    	android:gravity="center_horizontal"
+    	android:id="@+id/app_info"
+    	android:layout_weight="1.0"/>
+    	
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal"
+    	android:padding="10dip">
+    	
+    	<Button
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/start_logging"
+    		android:text="@string/start_logging"
+    		android:layout_weight="1.0"/>
+    		
+    	<Button
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/logging_interval"
+    		android:text="@string/logging_interval"
+    		android:layout_weight="1.0"/>
+    		
+    </LinearLayout>
+</LinearLayout>

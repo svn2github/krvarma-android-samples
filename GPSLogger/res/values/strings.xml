@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">GPS Logger</string>
+<string name="app_info">&lt;p&gt;This is a sample application to demonstrate the use of &lt;b&gt;Service Application&lt;/b&gt; in Android.&lt;/p&gt;&lt;p&gt;This application logs the GPS coordinates of the device to a KML file in specified intervals. The file will be located at &lt;br&gt;\'&lt;b&gt;/sdcard/gpslogger/&lt;/b&gt;\' folder.&lt;/p&gt;&lt;p&gt;For more information please visit&lt;br&gt;&lt;b&gt;http://www.androiddevblog.net&lt;/b&gt;&lt;/p&gt;</string>
+<string name="start_logging">Start Logging</string>
+<string name="stop_logging">Stop Logging</string>
+<string name="logging_interval">Logging Interval</string>
+</resources>
