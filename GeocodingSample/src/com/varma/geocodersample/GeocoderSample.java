@@ -120,7 +120,7 @@ public class GeocoderSample extends Activity implements GPSCallback{
     	{
     		try 
 			{
-    			addresses = coder.getFromLocation(latitude, longitude, 1);
+    			addresses = coder.getFromLocation(latitude, longitude, 5);
 			}
 			catch (Exception e)
 			{
