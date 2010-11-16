@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_info">This is a sample application to detect face(s) from a bitmap\n\nClick on the \'Take Picture\' to take a picture using Camera and detect the face(s) in the picture taken.</string>
+    <string name="app_name">DetectFace</string>
+<string name="take_picture">Take Picture</string>
+<string name="detect_face">Detect Face</string>
+</resources>
