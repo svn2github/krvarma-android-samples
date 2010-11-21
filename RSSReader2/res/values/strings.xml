@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">RSSReader</string>
+<string name="no_channels_text">No RSS channels\n\nPress \&quot;Add Channel\&quot; button to add RSS channel.</string>
+<string name="add_rss_channel">Add RSS Channel</string>
+<string name="add_rss_channel_title">Add Channel</string>
+</resources>
