@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wallpaper_pattern">Pattern Wallpaper</string>
+    <string name="app_name">patternwallpaper</string>
+<string name="wallpaper_settings_title">Patterns</string>
+<string name="wallpaper_settings_summary">Select a pattern</string>
+<string name="wallpaper_settings">Pattern Wallpaer Settings</string>
+<string name="wallpaper_description">Live Wallpaper Demo</string>
+</resources>

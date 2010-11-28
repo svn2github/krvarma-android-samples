@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="pattern_names">
+		<item>Spirograph</item>
+		<item>Circle</item>
+		<item>Sierpinski Triangle</item>
+	</string-array>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/wallpaper_settings"
+        android:key="patternwallpaper_settings">
+
+    <ListPreference
+            android:key="pattern_shape"
+            android:title="@string/wallpaper_settings_title"
+            android:summary="@string/wallpaper_settings_summary"
+            android:entries="@array/pattern_names"
+            android:entryValues="@array/pattern_prefix"/>
+
+</PreferenceScreen>
