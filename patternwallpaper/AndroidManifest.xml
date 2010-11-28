@@ -6,7 +6,6 @@
 	
 	<uses-sdk android:minSdkVersion="7" />
 	<uses-feature android:name="android.software.live_wallpaper" />
-    <uses-feature android:name="android.software.live_wallpaper" />
 	
 	<application 
 		android:icon="@drawable/icon" 
@@ -19,7 +18,7 @@
             <intent-filter>
                 <action android:name="android.service.wallpaper.WallpaperService" />
             </intent-filter>
-            <meta-data android:name="android.service.wallpaper" android:resource="@xml/spirograph" />
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/patternwallpaper" />
         </service>
 		
 		<activity
