@@ -40,6 +40,8 @@ public class PatternWallpaper extends WallpaperService {
 	}
 	
 	private class PatternWallpaperEngine extends Engine{
+		private static final int DRAW_DELAY = 5000;
+
 		private final Runnable drawrunnable = new Runnable() {
 			public void run() {
 				draw();
@@ -127,7 +129,7 @@ public class PatternWallpaper extends WallpaperService {
 			
 			if(isVisible)
 			{
-				handler.postDelayed(drawrunnable,5000);
+				handler.postDelayed(drawrunnable,DRAW_DELAY);
 			}
 		}
 		
@@ -140,6 +142,7 @@ public class PatternWallpaper extends WallpaperService {
 				case 1:		drawSpirograph(canvas);		break;		// Siprograph
 				case 2:		drawCirclePattern(canvas);	break;		// Circle pattern
 				case 3:		drawSierpinski(canvas);		break;		// Sierpinski triangle
+				case 4:		drawSpirals(canvas);		break;		// Sierpinski triangle
 			}
 		}
 
@@ -210,16 +213,16 @@ public class PatternWallpaper extends WallpaperService {
 			int offsetx = width/2;
 			int offsety = height/2;
 			
-			double R = Math.random() * 101 + 1;
-			double r = Math.random() * 101 + 1;
-			double O = Math.random() * 101 + 1;
+			double R = Math.random() * 50 + 1;
+			double r = Math.random() * 80 + 1;
+			double O = Math.random() * 100 + 1;
 			double step = 0.004 * Math.sqrt(r);
 			double exprResult = 0;
 			double rDiff = R + r;
 			int x = 0;
 			int y = 0;
 			
-			double iterations = 1024;
+			double iterations = 120;
 			
 			paint.setColor(Color.rgb(
 					(int)(Math.random() * 256), 
@@ -236,6 +239,38 @@ public class PatternWallpaper extends WallpaperService {
 				y = (int)((rDiff) * Math.sin(iter) - (O) * Math.cos(exprResult) + offsety);
 				
 				canvas.drawPoint(x, y, paint);
+			}
+		}
+
+		private void drawSpirals(Canvas canvas) {
+			int offsetx = width/2;
+			int offsety = height/2;
+			
+			float a = 1.0f;
+			float t = 4.5f;
+			float x = offsetx;
+			float y = offsetx;
+			float iter = 0.0f;
+			float increment = 0.01f;
+			float tincrement = 0.1f;
+			float maxIter = 1024;
+			
+			paint.setColor(Color.rgb(
+					(int)(Math.random() * 256), 
+					(int)(Math.random() * 256), 
+					(int)(Math.random() * 256)));
+			paint.setStrokeWidth(2.0f);
+			
+			canvas.drawColor(Color.BLACK);
+			
+			while(iter < maxIter){
+				x = (float) (a * t * Math.cos(t)) + offsetx;
+				y = (float) (a * t * Math.sin(t)) + offsety;
+				
+				canvas.drawPoint(x, y, paint);
+				
+				iter += increment;
+				t += tincrement;
 			}
 		}
 	}
