@@ -66,10 +66,13 @@ public class RecorderActivity extends Activity {
 	private void startRecording(){
 		recorder = new MediaRecorder();
 		
-		recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+		recorder.setAudioSource(MediaRecorder.AudioSource.VOICE_CALL);
 		recorder.setOutputFormat(output_formats[currentFormat]);
 		recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
 		recorder.setOutputFile(getFilename());
+		
+		recorder.setOnErrorListener(errorListener);
+		recorder.setOnInfoListener(infoListener);
 		
 		try {
 			recorder.prepare();
@@ -108,6 +111,20 @@ public class RecorderActivity extends Activity {
 			   })
 			   .show();
 	}
+	
+	private MediaRecorder.OnErrorListener errorListener = new MediaRecorder.OnErrorListener() {
+		@Override
+		public void onError(MediaRecorder mr, int what, int extra) {
+			AppLog.logString("Error: " + what + ", " + extra);
+		}
+	};
+	
+	private MediaRecorder.OnInfoListener infoListener = new MediaRecorder.OnInfoListener() {
+		@Override
+		public void onInfo(MediaRecorder mr, int what, int extra) {
+			AppLog.logString("Warning: " + what + ", " + extra);
+		}
+	};
     
     private View.OnClickListener btnClick = new View.OnClickListener() {
 		@Override
