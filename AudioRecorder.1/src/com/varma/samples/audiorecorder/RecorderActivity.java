@@ -66,7 +66,7 @@ public class RecorderActivity extends Activity {
 	private void startRecording(){
 		recorder = new MediaRecorder();
 		
-		recorder.setAudioSource(MediaRecorder.AudioSource.VOICE_CALL);
+		recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
 		recorder.setOutputFormat(output_formats[currentFormat]);
 		recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
 		recorder.setOutputFile(getFilename());
