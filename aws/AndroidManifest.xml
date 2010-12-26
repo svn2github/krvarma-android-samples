@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.varma.android.aws"
+    android:versionCode="1"
+    android:versionName="1.0" 
+    android:installLocation="auto">
+    
+    <application 
+    	android:icon="@drawable/icon" 
+		android:label="@string/app_name" 
+		android:name="com.varma.android.aws.app.AWSApplication" 
+		android:description="@string/app_desc" android:debuggable="true">
+		
+        <activity 
+        	android:name="com.varma.android.aws.ui.AWSActivity"
+            android:label="@string/app_title">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        <activity 
+        	android:name="com.varma.android.aws.ui.AWSMessageActivity"
+            android:label="@string/message_title"
+            android:theme="@android:style/Theme.NoTitleBar">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+		</activity>
+		
+		<activity 
+        	android:name="com.varma.android.aws.ui.AWSPreferenceActivity"
+            android:label="@string/preference_title">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+		</activity>
+		
+		<service android:name="com.varma.android.aws.service.HTTPService" /> 
+		
+    </application>
+
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-sdk android:targetSdkVersion="8" android:minSdkVersion="5"></uses-sdk>
+<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+</manifest> 

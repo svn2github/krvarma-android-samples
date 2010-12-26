@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/pref_serverport_section_title">
+		<EditTextPreference  
+			android:dialogTitle="@string/pref_serverport_title"
+            android:dialogMessage="@string/pref_serverport_message"
+            android:key="prefServerPort"
+            android:title="@string/pref_serverport_title"
+            android:summary="@string/pref_serverport_summary"
+            android:defaultValue="8080"
+            android:inputType="number"/>  
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="@string/pref_dirlisting_section_title">
+        <CheckBoxPreference
+            android:key="prefDirectotyListing"
+            android:title="@string/pref_dirlisting_title"
+            android:defaultValue="true"
+            android:summary="@string/pref_dirlisting_summary" />
+                
+		<EditTextPreference  
+			android:dialogTitle="@string/pref_dir_title"
+            android:dialogMessage="@string/pref_dir_message"
+            android:dependency="prefDirectotyListing"
+            android:key="prefDirectory"
+            android:title="@string/pref_dir_title"
+            android:summary="@string/pref_dir_summary"
+            android:defaultValue="/sdcard"/>  
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="@string/pref_notification_section_title">
+		 <CheckBoxPreference
+            android:key="prefVibrate"
+            android:title="@string/pref_vibrate_title"
+            android:defaultValue="true"
+            android:summary="@string/pref_vibrate_summary" />
+		
+		<CheckBoxPreference
+            android:key="prefPlaySound"
+            android:title="@string/pref_playsound_title"
+            android:defaultValue="true"
+            android:summary="@string/pref_playsound_summary" />
+
+		<RingtonePreference
+			android:key="@string/play_ringtone_key"
+			android:dependency="prefPlaySound"
+            android:title="@string/play_ringtone_title"
+            android:summary="@string/pref_ringtone_summary"
+            android:ringtoneType="notification"
+            android:showDefault="true"/>
+	</PreferenceCategory>
+	
+</PreferenceScreen>
