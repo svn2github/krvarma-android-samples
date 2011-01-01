@@ -2,13 +2,17 @@ package com.varma.android.aws.ui;
 
 import com.varma.android.aws.R;
 import com.varma.android.aws.app.AppSettings;
+import com.varma.android.aws.constants.Constants;
 import com.varma.android.aws.service.HTTPService;
+import com.varma.android.aws.utility.Utility;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.util.Linkify;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -27,7 +31,11 @@ public class AWSActivity extends Activity {
         
         prepareViews();
         setButtonHandlers();
-        setButtonText(AppSettings.isServiceStarted(this));
+        
+        boolean isRunning = AppSettings.isServiceStarted(this);
+        
+        setButtonText(isRunning);
+        setInfoText(isRunning);
     }
     
     @Override
@@ -103,6 +111,19 @@ public class AWSActivity extends Activity {
 				getString(isServiceRunning ? R.string.stop_caption : R.string.start_caption));
 	}
 	
+	private void setInfoText(boolean isServiceRunning){
+		TextView txtLog = (TextView)findViewById(R.id.txtLog);
+		String text = getString(R.string.log_notrunning);
+		
+		if(isServiceRunning){
+			SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+			
+			text = getString(R.string.log_running) + "\nhttp://" + Utility.getLocalIpAddress() + ":" + pref.getString(Constants.PREF_SERVER_PORT, "" + Constants.DEFAULT_SERVER_PORT);
+		}
+		
+		txtLog.setText(text);
+	}
+	
 	private View.OnClickListener btnClick = new View.OnClickListener() {
 		
 		@Override
@@ -116,12 +137,14 @@ public class AWSActivity extends Activity {
 						
 						AppSettings.setServiceStarted(AWSActivity.this, false);
 						setButtonText(false);
+						setInfoText(false);
 					}
 					else{
 						startService(intent);
 						
 						AppSettings.setServiceStarted(AWSActivity.this, true);
 						setButtonText(true);
+						setInfoText(true);
 					}
 					
 					break;

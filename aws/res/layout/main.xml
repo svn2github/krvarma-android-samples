@@ -17,11 +17,10 @@
 	    	android:id="@+id/txtHeading"
 	    	android:text="@string/app_desc"
 	    	android:textColor="#FFFFFF"
-	    	android:textScaleX="2"
 	    	android:textStyle="bold|italic"
 	    	android:paddingTop="10dip"
 	    	android:paddingBottom="10dip"
-	    	android:gravity="center"/>
+	    	android:gravity="left"/>
 	    	
 	    <TextView  
 	    	android:layout_width="fill_parent" 
@@ -29,6 +28,21 @@
 	    	android:id="@+id/txtInfo"
 	    	android:text="@string/app_info"
 	    	android:textColor="#FFFFFF"/>
+	    	
+	    <LinearLayout
+	    	android:orientation="vertical"
+			android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:paddingTop="10dip"
+			android:paddingBottom="10dip">
+	    	
+	    	<View 
+		    	android:id="@+id/divider"
+			    android:background="@drawable/bw_gradient"
+			    android:layout_width="fill_parent"
+			    android:layout_height="1dp"/>
+	    	
+	   	</LinearLayout>
 	    	
 	    <TextView  
 	    	android:layout_width="fill_parent" 
@@ -41,7 +55,7 @@
 		android:orientation="horizontal"
 		android:layout_width="fill_parent"
     	android:layout_height="wrap_content"
-    	android:background="@android:drawable/bottom_bar"
+    	
     	android:gravity="center_vertical|center_horizontal">
     	
 	    <Button

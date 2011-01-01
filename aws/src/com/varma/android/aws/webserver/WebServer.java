@@ -26,7 +26,6 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
 public class WebServer extends Thread {
-	private static final int DEFAULT_SERVER_PORT = 8080;
 	private static final String SERVER_NAME = "AndWebServer";
 	private static final String ALL_PATTERN = "*";
 	private static final String MESSAGE_PATTERN = "/message*";
@@ -50,7 +49,7 @@ public class WebServer extends Thread {
 		
 		SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(context);
 		
-		serverPort = Integer.parseInt(pref.getString(Constants.PREF_SERVER_PORT, "" + DEFAULT_SERVER_PORT));
+		serverPort = Integer.parseInt(pref.getString(Constants.PREF_SERVER_PORT, "" + Constants.DEFAULT_SERVER_PORT));
 		httpproc = new BasicHttpProcessor();
 		httpContext = new BasicHttpContext();
 		
