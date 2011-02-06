@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
-    <string name="hello">Hello World, InfoActivity!</string>
-    <string name="app_name">GPSWidget</string>
+    <string name="app_name">GPS Widget</string>
+    <string name="app_info">GPS Widget is a sample application to demonstrate the use of Android AppWidget.\n\nThe widget shows the GPS coordinates of the device\'s position. The widget refreshes the position in 15 minutes interval</string>
 </resources>
